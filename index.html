@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="DashingQi, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            Schedule
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            Sitemap
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/04/Android%E4%B8%AD%E7%9A%84%E5%A4%A7%E8%83%96%E5%B0%8F%E5%AD%90_Bitmap/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/03/04/Android%E4%B8%AD%E7%9A%84%E5%A4%A7%E8%83%96%E5%B0%8F%E5%AD%90_Bitmap/" itemprop="url">Android中的大胖小子_Bitmap</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-04T21:38:14+08:00">
+                2020-03-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="https://upload-images.jianshu.io/upload_images/4997216-894fae81a7d7c80d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Bitmap的内存模型"><a href="#Bitmap的内存模型" class="headerlink" title="Bitmap的内存模型"></a>Bitmap的内存模型</h2><p><strong>Android的Bitmap内存管理也是随着版本的迭代在不断的演进</strong></p>
+<h6 id="API10之前"><a href="#API10之前" class="headerlink" title="API10之前"></a>API10之前</h6><ul>
+<li>API10之前的时候也就是Android2.3.3之前，Bitmap的像素数据是保存在Native内存中的，而Bitmap对象是放在堆内存中（Dalvik Heap中） </li>
+<li>Native内存中的像素数据不会按照预期的方式进行同步回收，有可能导致Native内存升高。</li>
+</ul>
+<h6 id="API10-到-API26"><a href="#API10-到-API26" class="headerlink" title="API10 到 API26"></a>API10 到 API26</h6><ul>
+<li>也就是从Android3.0到Android8.0的时候，Android把Bitmap的像素数据也放到堆内存中了，这样像素数据也会随着Bitmap的对象的回收而一起回收。</li>
+</ul>
+<h6 id="API26之后"><a href="#API26之后" class="headerlink" title="API26之后"></a>API26之后</h6><ul>
+<li>也就是从Android8.0之后，Android把像素数据再次放到Native内存中，但是这回做了改进，native层的Bitmap像素数据可以做好和Java层的对象一起快速释放。</li>
+</ul>
+<h2 id="Bitmap的像素格式-也就是一个像素占用的内存大小"><a href="#Bitmap的像素格式-也就是一个像素占用的内存大小" class="headerlink" title="Bitmap的像素格式(也就是一个像素占用的内存大小)"></a>Bitmap的像素格式(也就是一个像素占用的内存大小)</h2><h6 id="ARGB-8888-Android默认使用的像素格式"><a href="#ARGB-8888-Android默认使用的像素格式" class="headerlink" title="ARGB_8888(Android默认使用的像素格式)"></a>ARGB_8888(Android默认使用的像素格式)</h6><ul>
+<li>颜色信由有Alpha、Red、Green、Blue四部分组成，每个部分占了8位，共32位，占了4个字节</li>
+</ul>
+<h6 id="ARGB-4444"><a href="#ARGB-4444" class="headerlink" title="ARGB_4444"></a>ARGB_4444</h6><ul>
+<li>颜色信息由Alpha、Red、Green、Blue四部分组成，每个部分占了4位，共16位，占了2个字节</li>
+</ul>
+<h6 id="RGB-565"><a href="#RGB-565" class="headerlink" title="RGB_565"></a>RGB_565</h6><ul>
+<li>颜色信息由Red、Green、Blue三部分组成，R占了5位、G占了6位、B占了5位，共16位，占了2个字节</li>
+</ul>
+<h6 id="ALPHA-8"><a href="#ALPHA-8" class="headerlink" title="ALPHA_8"></a>ALPHA_8</h6><ul>
+<li>颜色信息只有透明度，共8位 占了1个字节。</li>
+</ul>
+<h2 id="Bitmap占有的内存"><a href="#Bitmap占有的内存" class="headerlink" title="Bitmap占有的内存"></a>Bitmap占有的内存</h2><h4 id="getByteCount"><a href="#getByteCount" class="headerlink" title="getByteCount()"></a>getByteCount()</h4><ul>
+<li>该方法是在API12加入的，代表着Bitmap的像素数据需要最少的内存。</li>
+<li>在API19开始getAlloctaionByteCount()方法替代了getByteCount()。</li>
+</ul>
+<h4 id="getAllocationByteCount"><a href="#getAllocationByteCount" class="headerlink" title="getAllocationByteCount()"></a>getAllocationByteCount()</h4><ul>
+<li>API19之后加入的，代表着内存中为Bitmap分配的内存大小。</li>
+</ul>
+<h4 id="Bitmap的内存回收"><a href="#Bitmap的内存回收" class="headerlink" title="Bitmap的内存回收"></a>Bitmap的内存回收</h4><ul>
+<li>在Android3.0之前，需要手动调用Bitmap.recycler()进行Bitmap的回收</li>
+<li>在Android3.0之后，不需要手动回收Bitmap了。</li>
+</ul>
+<h4 id="Bitmap的内存复用"><a href="#Bitmap的内存复用" class="headerlink" title="Bitmap的内存复用"></a>Bitmap的内存复用</h4><h6 id="怎么复用"><a href="#怎么复用" class="headerlink" title="怎么复用"></a>怎么复用</h6><ul>
+<li><p>在Android3.0之后引入了新的字段 BitmapFactory.Options.inBitmap和inMutab </p>
+</li>
+<li><p>如果字段inMutable设置为true，那么解码的方法会尝试服用一个存在的Bitmap。</p>
+</li>
+<li><p>Bitmap的内存复用意味着减少了一个内存的回收以及申请，这样性能会更好。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequiresApi</span>(api = Build.VERSION_CODES.KITKAT)</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">reuseBitmap</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        BitmapFactory.Options options = <span class="keyword">new</span> BitmapFactory.Options();</span><br><span class="line">       <span class="comment">//关键点1</span></span><br><span class="line">        options.inMutable = <span class="keyword">true</span>;</span><br><span class="line">        options.inDensity = <span class="number">320</span>;</span><br><span class="line">        options.inTargetDensity = <span class="number">320</span>;</span><br><span class="line">        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.scal_density, options);</span><br><span class="line">        Log.d(TAG, <span class="string">"reuseBitmap: "</span> + bitmap);</span><br><span class="line">        Log.d(TAG, <span class="string">"reuseBitmap: width = "</span> + bitmap.getWidth() + <span class="string">",height = "</span> + bitmap.getHeight());</span><br><span class="line">        Log.d(TAG, <span class="string">"reuseBitmap: byte_count = "</span>+bitmap.getByteCount()+<span class="string">",allocation_byte_count ="</span>+bitmap.getAllocationByteCount());</span><br><span class="line">        <span class="comment">// 关键点2</span></span><br><span class="line">        options.inBitmap = bitmap;</span><br><span class="line">        options.inDensity = <span class="number">320</span>;</span><br><span class="line">        options.inTargetDensity = <span class="number">160</span>;</span><br><span class="line">        Bitmap bitmap2 = BitmapFactory.decodeResource(getResources(), R.drawable.scal_density, options);</span><br><span class="line">        Log.d(TAG, <span class="string">"reuseBitmap: "</span> + bitmap2);</span><br><span class="line">        Log.d(TAG, <span class="string">"reuseBitmap: width = "</span> + bitmap2.getWidth() + <span class="string">",height = "</span> + bitmap2.getHeight());</span><br><span class="line">        Log.d(TAG, <span class="string">"reuseBitmap: byte_count = "</span>+bitmap2.getByteCount()+<span class="string">",allocation_byte_count ="</span>+bitmap2.getAllocationByteCount());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//运行结果</span></span><br><span class="line"></span><br><span class="line"><span class="number">2020</span>-<span class="number">03</span>-<span class="number">04</span> <span class="number">20</span>:<span class="number">15</span>:<span class="number">23.955</span> <span class="number">29831</span>-<span class="number">29831</span>/? D/MainActivity: reuseBitmap: android.graphics.Bitmap@<span class="number">57148f</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">03</span>-<span class="number">04</span> <span class="number">20</span>:<span class="number">15</span>:<span class="number">23.955</span> <span class="number">29831</span>-<span class="number">29831</span>/? D/MainActivity: reuseBitmap: width = <span class="number">720</span>,height = <span class="number">360</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">03</span>-<span class="number">04</span> <span class="number">20</span>:<span class="number">15</span>:<span class="number">23.955</span> <span class="number">29831</span>-<span class="number">29831</span>/? D/MainActivity: reuseBitmap: byte_count = <span class="number">1036800</span>,allocation_byte_count =<span class="number">1036800</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">03</span>-<span class="number">04</span> <span class="number">20</span>:<span class="number">15</span>:<span class="number">23.964</span> <span class="number">29831</span>-<span class="number">29831</span>/? D/MainActivity: reuseBitmap: android.graphics.Bitmap@<span class="number">57148f</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">03</span>-<span class="number">04</span> <span class="number">20</span>:<span class="number">15</span>:<span class="number">23.964</span> <span class="number">29831</span>-<span class="number">29831</span>/? D/MainActivity: reuseBitmap: width = <span class="number">360</span>,height = <span class="number">180</span></span><br><span class="line"><span class="number">2020</span>-<span class="number">03</span>-<span class="number">04</span> <span class="number">20</span>:<span class="number">15</span>:<span class="number">23.964</span> <span class="number">29831</span>-<span class="number">29831</span>/? D/MainActivity: reuseBitmap: byte_count = <span class="number">259200</span>,allocation_byte_count =<span class="number">1036800</span></span><br><span class="line"></span><br><span class="line"> <span class="comment">//同一个对象</span></span><br><span class="line">  <span class="comment">// 复用后的bitmap getAllocationByteCount 和 getByteCount 也是不一样的。</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h6 id="复用也是有版本的问题的"><a href="#复用也是有版本的问题的" class="headerlink" title="复用也是有版本的问题的"></a>复用也是有版本的问题的</h6><ul>
+<li>在Android4.4之前只有格式为jpg、png，同等宽高，inSampleSize为1的Bitmap才可以复用。</li>
+<li>在Android4.4之后开始，被复用的Bitmap内存大于需要新申请内存的Bitmap的内存就可以。</li>
+</ul>
+<h4 id="说下getByteCount-和getAllocationByteCount-的区别"><a href="#说下getByteCount-和getAllocationByteCount-的区别" class="headerlink" title="说下getByteCount()和getAllocationByteCount()的区别"></a>说下getByteCount()和getAllocationByteCount()的区别</h4><ul>
+<li>两者一般情况下是相等的。</li>
+<li>通过复用Bitmap来解码图片的时候，如果被复用的Bitmap的内存比待内存分配的Bitmap要大的时候<ul>
+<li>getByteCode表示新的Bitmap的像素大小也就是占用的内存大小。</li>
+<li>getAllocationByteCode表示要被复用的Bitmap的真实内存大小</li>
+</ul>
+</li>
+</ul>
+<h2 id="计算Bitmap占用的内存"><a href="#计算Bitmap占用的内存" class="headerlink" title="计算Bitmap占用的内存"></a>计算Bitmap占用的内存</h2><blockquote>
+<p>让人想到的就是： width x height x 一个像素占用的内存大小</p>
+</blockquote>
+<h4 id="BitmapFactory-decodeResource"><a href="#BitmapFactory-decodeResource" class="headerlink" title="BitmapFactory.decodeResource()"></a>BitmapFactory.decodeResource()</h4><ul>
+<li>使用这个API进行图片的解码，bitmap在内存中占用的大小 = width x scale x height x scale x 一个像素占用的内存大小; </li>
+<li>其中 scale(缩放系数) = mTargetDensity/inDensity;</li>
+<li>这里面的width和height，可以理解为图片的原始宽和高，当图片放进不同的drawable文件夹中的时候，内存中Bitmap的宽和高 与图片的实际宽和高有可能不一样大了。</li>
+<li>正常情况下我们所说的公式 width和height 是Bitmap的，</li>
+<li>一张图片在相同app中的不同的资源文件夹下 占用的内存可能不一样大。</li>
+</ul>
+<h4 id="BitmapFactory-decodeFile"><a href="#BitmapFactory-decodeFile" class="headerlink" title="BitmapFactory.decodeFile()"></a>BitmapFactory.decodeFile()</h4><ul>
+<li>该方法从磁盘中加载到内存中不涉及到缩放（inDenisty和inTargetDensity）的影响。</li>
+</ul>
+<h2 id="Bitmap的压缩"><a href="#Bitmap的压缩" class="headerlink" title="Bitmap的压缩"></a>Bitmap的压缩</h2><h4 id="质量压缩-Bitmap-compress"><a href="#质量压缩-Bitmap-compress" class="headerlink" title="质量压缩(Bitmap.compress())"></a>质量压缩(Bitmap.compress())</h4><ul>
+<li>它在不改变图片的像素的提前下，改变图片的位深和透明度，来进行压缩图片。</li>
+<li>但是经过质量压缩后磁盘中的File会变小，但是解码后的Bitmap在内存中的大小是不变的。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 质量压缩</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> bitmap</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> Bitmap <span class="title">compressBitmap</span><span class="params">(Bitmap bitmap)</span> </span>&#123;</span><br><span class="line">        ByteArrayOutputStream ous = <span class="keyword">new</span> ByteArrayOutputStream();</span><br><span class="line">        bitmap.compress(Bitmap.CompressFormat.JPEG, <span class="number">100</span>, ous);</span><br><span class="line">        <span class="keyword">int</span> options = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">while</span> (ous.toByteArray().length / <span class="number">1024</span> &gt; <span class="number">100</span>) &#123;</span><br><span class="line">            ous.reset();</span><br><span class="line">          	options -= <span class="number">10</span>;</span><br><span class="line">            bitmap.compress(Bitmap.CompressFormat.JPEG, options, ous);</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        ByteArrayInputStream bIn = <span class="keyword">new</span> ByteArrayInputStream(ous.toByteArray());</span><br><span class="line">        Bitmap compressBitmap = BitmapFactory.decodeStream(bIn, <span class="keyword">null</span>, <span class="keyword">null</span>);</span><br><span class="line">        <span class="keyword">return</span> compressBitmap;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="质量压缩后的Bitmap，再次保存到本地变大了？"><a href="#质量压缩后的Bitmap，再次保存到本地变大了？" class="headerlink" title="质量压缩后的Bitmap，再次保存到本地变大了？"></a>质量压缩后的Bitmap，再次保存到本地变大了？</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">saveBitmapToJPG</span><span class="params">(Bitmap bitmap, File file)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (bitmap == <span class="keyword">null</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    FileOutputStream fos = <span class="keyword">null</span>;</span><br><span class="line">     <span class="keyword">if</span> (file.exists())&#123;</span><br><span class="line">         file.delete();</span><br><span class="line">     &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        fos = <span class="keyword">new</span> FileOutputStream(file);</span><br><span class="line">        bitmap.compress(Bitmap.CompressFormat.JPEG, <span class="number">100</span>, fos);</span><br><span class="line">        fos.flush();</span><br><span class="line">        fos.close();</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>原因是压缩后的Bitmap经过了一次编码，导致保存的Bitmap过大</li>
+</ul>
+<h6 id="可以这样搞"><a href="#可以这样搞" class="headerlink" title="可以这样搞"></a>可以这样搞</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">compressPic(BitmapFactory.decodeResource(getResources(),R.drawable.scal_density));</span><br><span class="line">       String path = Environment.getExternalStorageDirectory().getPath();</span><br><span class="line">       File file = <span class="keyword">new</span> File(path, <span class="string">"/test/2.jpg"</span>);</span><br><span class="line">       <span class="keyword">if</span> (!file.exists()) &#123;</span><br><span class="line">           file.getParentFile().mkdirs();</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           FileOutputStream fileOutputStream = <span class="keyword">new</span> FileOutputStream(file);</span><br><span class="line">           fileOutputStream.write(ous.toByteArray());</span><br><span class="line">           fileOutputStream.flush();</span><br><span class="line">           fileOutputStream.close();</span><br><span class="line">       &#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="采样率压缩-BitmapFactory-Options-inSampleSize"><a href="#采样率压缩-BitmapFactory-Options-inSampleSize" class="headerlink" title="采样率压缩(BitmapFactory.Options.inSampleSize)"></a>采样率压缩(BitmapFactory.Options.inSampleSize)</h4><ul>
+<li><p>可以真实压缩解码后的Bitmap在内存中的大小。</p>
+</li>
+<li><p>首先我们设置inJustDecodeBounds = true 不加载Bitmap到内存中，但是可以获取Bitmap的原始宽高。</p>
+</li>
+<li><p>根据Bitmap的宽高和想要显示的大小，计算合适的inSampleSize设置黑Options.inSampleSize = </p>
+</li>
+<li><p>然后将inJustDecodeBounds = false ,意味着可以进行加载Bitmap到内存中了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">calculateInSampleSize</span><span class="params">(BitmapFactory.Options options, <span class="keyword">int</span> reqWidth, <span class="keyword">int</span> reqHeight)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">int</span> outWidth = options.outWidth;</span><br><span class="line">      <span class="keyword">int</span> outHeight = options.outHeight;</span><br><span class="line">      <span class="keyword">int</span> inSampleSize = <span class="number">1</span>;</span><br><span class="line">  </span><br><span class="line">      <span class="keyword">if</span> (outWidth &gt; reqWidth || outHeight &gt; reqHeight) &#123;</span><br><span class="line">          <span class="keyword">final</span> <span class="keyword">int</span> halfHeight = outHeight / <span class="number">2</span>;</span><br><span class="line">          <span class="keyword">final</span> <span class="keyword">int</span> halfWidth = outWidth / <span class="number">2</span>;</span><br><span class="line">  </span><br><span class="line">          <span class="keyword">while</span> ((halfWidth / inSampleSize) &gt; reqWidth &amp;&amp; (halfHeight / inSampleSize) &gt; reqHeight) &#123;</span><br><span class="line">              inSampleSize *= <span class="number">2</span>;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">  </span><br><span class="line">      <span class="keyword">return</span> inSampleSize;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 采样率压缩法</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param</span> path</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param</span> reqWidth</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param</span> reqHeight</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> Bitmap <span class="title">decodeBitmapFromFile</span><span class="params">(String path, <span class="keyword">int</span> reqWidth, <span class="keyword">int</span> reqHeight)</span> </span>&#123;</span><br><span class="line">      BitmapFactory.Options options = <span class="keyword">new</span> BitmapFactory.Options();</span><br><span class="line">      <span class="comment">//设置读取图片的时候仅仅读取图片的长和宽</span></span><br><span class="line">      options.inJustDecodeBounds = <span class="keyword">true</span>;</span><br><span class="line">      Bitmap bitmap = BitmapFactory.decodeFile(path, options);</span><br><span class="line">      <span class="comment">//计算合适的缩放比</span></span><br><span class="line">      options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);</span><br><span class="line">      options.inPreferredConfig = Bitmap.Config.RGB_565;</span><br><span class="line">      options.inJustDecodeBounds = <span class="keyword">true</span>;</span><br><span class="line">      Bitmap realBitmap = BitmapFactory.decodeFile(path, options);</span><br><span class="line">      <span class="keyword">return</span> realBitmap;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/4997216-9586f650332ed75e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Bitmap知识点.png"></p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
